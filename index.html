@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <title>Title</title>
+  <link href = './style.css' rel = 'stylesheet'>
+</head>
+<body>
+<div class = 'block header'>
+  <div class = 'contentContainer'>
+    <div class = 'logo'>
+      <div class = 'logoBaseSquare'></div>
+      <div class = 'logoBaseSquare special'>
+        <div class = 'logoBaseSquare rotation'></div>
+      </div>
+      <div class = 'logoBaseSquare'></div>
+      <div class = 'logoBaseSquare'></div>
+    </div>
+    <h1 class = 'pageTitle'>好看 NiceLook</h1>
+    <h4 class = 'description'>好看为自由职业者提供简单好用的建站工具，不用写代码就可以一键生成个人网站和小程序</h4>
+  </div>
+</div>
+
+<div class = 'block templates'>
+  <div class = 'contentContainer' id = 'cardContainer'>
+    <h2 class = 'blockTitle'>丰富模板，完善的解决方案</h2>
+    <h4 class = 'description'>丰富多样的模板，多种自定义方案，满足你的建站需要</h4>
+  </div>
+</div>
+<div class = 'block contactUs'>
+  <div class = 'contentContainer'>
+    <h2 class = 'blockTitle'>联系我们 立即试用</h2>
+    <h4 class = 'description'>填写表单，立即申请试用机会</h4>
+    <div class = 'inputContainer'>
+      <input class = 'input' placeholder = '请填写您的称呼'>
+    </div>
+    <div class = 'inputContainer'>
+      <input class = 'input' placeholder = '请填写您的联系电话'>
+    </div>
+    <button>提交申请</button>
+
+  </div>
+</div>
+<div class = 'block features'>
+  <div class = 'contentContainer' id='featureContainer'>
+  </div>
+</div>
+<div class = 'footer block'>
+  <div class = 'contentContainer'>
+    北京市无限引力网络科技有限公司
+    <span style='margin-left: 50px'>京备案号 京ICP备15044848号-5</span>
+  </div>
+
+</div>
+</div>
+
+</body>
+<script>
+  // 范例部分
+  var cardItems = [{
+    title: '绝佳的品牌宣传机会',
+    image: 'brand.jpg',
+  }, {
+    title: '一键更换主题',
+    image: 'theme.jpg',
+  }, {
+    title: '支持定制插画设计',
+    image: 'picture.png',
+  }, {
+    title: '多平台方案，省心省力',
+    image: 'platform.jpg',
+  }, {
+    title: '轻松拥有自己的商品中心',
+    image: 'products.jpg',
+  }, {
+    title: '支持多语言配置',
+    image: 'i18n.jpg',
+  }];
+  var cardContainer = document.getElementById('cardContainer');
+  for (var index = 0; index < cardItems.length; index++) {
+    var item = cardItems[index];
+    cardContainer.innerHTML += '<div class = \'card\' ><div class=\'cardImage\' style=\'background-image: url(./resources/imageSet/' + item.image + ')\'' + '></div><h5>'
+      + item.title + '</div>';
+  }
+
+  // 功能介绍部分
+  var featureItems = [{
+    title: '专属域名',
+    description: '绑定自己的域名，建立品牌形象',
+    image: 'certificate.png'
+  },{
+    title: '简易商店',
+    description: '完善的电子商务功能，不收交易佣金，支持支付宝、微信支付方式',
+    image: 'cart-plus.png'
+  },{
+    title: '撰写文章',
+    description: '极简设计，方便管理，让你的访客第一时间了解网站动态资讯，每篇文章都拥有独立页面',
+    image: 'edit.png'
+  },{
+    title: '数据分析',
+    description: '网站内设有浏览量数据监测，简易图表助你时刻掌握流量动向',
+    image: 'chart-bar.png'
+  },{
+    title: '注册与留言功能',
+    description: '迅速收集用户反馈，方便访客注册申请，和你的用户时刻保持联系',
+    image: 'comment-dots.png'
+  },{
+    title: '第三方服务集成',
+    description: '与微信公众号深度集成，并提供第三方服务如百度地图、金数据表单等',
+    image: 'dumpster-fire.png'
+  },];
+  var featureContainer = document.getElementById('featureContainer');
+  for (var featureIndex = 0; featureIndex < featureItems.length; featureIndex++) {
+    var featureItem = featureItems[featureIndex];
+    featureContainer.innerHTML += "<div class = 'feature' >"
+      + '<div class="featureIcon" style="background-image: url(./resources/imageSet/' + featureItem.image + ')"></div>'
+      + '<h4>' + featureItem.title + '</h4><h4 class="featureDescription">' + featureItem.description + '</h4></div>';
+  }
+
+</script>
+</html>

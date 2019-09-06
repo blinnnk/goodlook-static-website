@@ -1,0 +1,272 @@
+html,
+body {
+  background-color: #007DFF;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.mainContainer {
+  min-height: calc(100% - 140px);
+}
+.pageTitle {
+  margin: 30px 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+.description {
+  margin: 10px 0 30px 0;
+  width: 100%;
+  text-align: center;
+}
+.contentContainer {
+  max-width: 800px;
+  /*使用flex布局*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  /*新的元素可换行显示，不加此代码会挤在一行*/
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /*选取space-around的居中且剩余空间左右两边平均分配*/
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  /*items纵轴居中*/
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  /*行纵轴居中*/
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
+  align-content: center;
+}
+.logoBaseSquare {
+  float: left;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+}
+.logoBaseSquare.special {
+  background-color: transparent;
+}
+.rotation {
+  position: relative;
+  animation: logoRotation 5s ease-in-out infinite;
+  left: 10px;
+  top: -10px;
+  transform: rotate(20deg);
+}
+.logo {
+  padding: 20px;
+  width: 80px;
+  border-radius: 24px;
+  transform: rotate(-10deg);
+}
+.block {
+  width: 100%;
+  /*使用flex布局*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  /*新的元素可换行显示，不加此代码会挤在一行*/
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /*选取space-around的居中且剩余空间左右两边平均分配*/
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  /*items纵轴居中*/
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  /*行纵轴居中*/
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
+  align-content: center;
+}
+.block.header {
+  height: 500px;
+}
+.block.contactUs {
+  height: 300px;
+}
+.block.templates {
+  padding: 30px;
+  width: calc(100% - 60px);
+  background-color: #0064cc;
+}
+.block.features {
+  padding: 50px 0;
+  height: auto;
+  background-color: #0064cc;
+}
+.card {
+  float: left;
+  width: 320px;
+  color: #007DFF;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px #007bfb;
+}
+.card:hover {
+  margin: 9px 10px 11px 10px;
+}
+.feature {
+  width: 400px;
+  margin: 10px;
+  height: 120px;
+  color: #66b1ff;
+}
+.featureDescription {
+  font-size: 12px;
+  width: calc(100% - 20px);
+  margin: 0;
+}
+.featureIcon {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 20px 20px 150px;
+  background-size: cover;
+}
+.inputContainer {
+  background-color: white;
+  padding: 0 10px;
+  width: 200px;
+  border-radius: 8px;
+  margin-right: 10px;
+  border: 2px solid #0064cc;
+}
+input {
+  width: 200px;
+  height: 36px;
+  font-size: 14px;
+  color: rgba(0, 125, 255, 0.2);
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 75, 153, 0.3);
+  opacity: 1;
+  /* Firefox */
+}
+.cardImage {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  background-color: rgba(0, 125, 255, 0.1);
+  background-size: cover;
+}
+button {
+  height: 36px;
+  width: 200px;
+  text-decoration: none;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #46DD87;
+  border-radius: 8px;
+}
+.card h5 {
+  width: 100%;
+  text-align: center;
+}
+.textCenter {
+  width: 100%;
+  text-align: center;
+}
+.makeChildCenter {
+  /*使用flex布局*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  /*新的元素可换行显示，不加此代码会挤在一行*/
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /*选取space-around的居中且剩余空间左右两边平均分配*/
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  /*items纵轴居中*/
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  /*行纵轴居中*/
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
+  align-content: center;
+}
+.makeChildHorizontalCenter {
+  /*使用flex布局*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  /*新的元素可换行显示，不加此代码会挤在一行*/
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /*选取space-around的居中且剩余空间平均分配*/
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.footer {
+  width: calc(100% - 40px);
+  padding: 20px;
+  height: 80px;
+  font-size: 10px;
+  color: black;
+  background-color: white;
+}
+@keyframes logoRotation {
+  0% {
+    background-color: #FFC211;
+    transform: scale(1) rotate(45deg);
+  }
+  20% {
+    background-color: #2CCA73;
+  }
+  40% {
+    background-color: #1D2D40;
+  }
+  60% {
+    transform: scale(0.8) rotate(225deg);
+    background-color: #EA62CF;
+  }
+  80% {
+    background-color: #7452E9;
+  }
+  100% {
+    background-color: #FFC211;
+    transform: scale(1) rotate(405deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
